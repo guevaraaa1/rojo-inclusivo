@@ -1,0 +1,370 @@
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Rojo Inclusivo - Club Atlético Independiente
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", "Roboto", sans-serif;
+      scroll-behavior: smooth;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #b91c1c;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #7f1212;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900 leading-relaxed selection:bg-red-700 selection:text-white">
+  <!-- Navbar -->
+  <header class="bg-red-700 text-white shadow-lg sticky top-0 z-50">
+   <nav aria-label="Menú principal" class="container mx-auto flex items-center justify-between p-4 md:p-6 max-w-7xl">
+    <a class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-white rounded" href="#inicio">
+     <img alt="Logo oficial del Club Atlético Independiente, escudo rojo con letras blancas" class="w-16 h-16 object-contain" height="64" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fbaf690d-3d52-4cc2-3f5c-ebd47b6f3a88.jpg" width="64"/>
+     <span class="font-extrabold text-2xl md:text-3xl tracking-wide drop-shadow-md">
+      Rojo Inclusivo
+     </span>
+    </a>
+    <ul class="hidden md:flex space-x-10 font-semibold text-lg tracking-wide" role="menubar">
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#inicio" role="menuitem">
+       Inicio
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#quienes-somos" role="menuitem">
+       Quiénes somos
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#nuestro-recorrido" role="menuitem">
+       Nuestro recorrido
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#acciones-destacadas" role="menuitem">
+       Acciones destacadas
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#alianzas" role="menuitem">
+       Alianzas
+      </a>
+     </li>
+     <li role="none">
+      <a class="hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#contacto" role="menuitem">
+       Contacto
+      </a>
+     </li>
+    </ul>
+    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú" class="md:hidden focus:outline-none focus:ring-2 focus:ring-white rounded" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </nav>
+   <!-- Mobile menu -->
+   <div aria-label="Menú móvil" class="hidden bg-red-600" id="mobile-menu" role="menu">
+    <ul class="flex flex-col p-6 space-y-4 font-semibold text-white text-lg">
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#inicio" role="menuitem">
+       Inicio
+      </a>
+     </li>
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#quienes-somos" role="menuitem">
+       Quiénes somos
+      </a>
+     </li>
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#nuestro-recorrido" role="menuitem">
+       Nuestro recorrido
+      </a>
+     </li>
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#acciones-destacadas" role="menuitem">
+       Acciones destacadas
+      </a>
+     </li>
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#alianzas" role="menuitem">
+       Alianzas
+      </a>
+     </li>
+     <li role="none">
+      <a class="block hover:text-gray-200 transition focus:outline-none focus:ring-2 focus:ring-white rounded" href="#contacto" role="menuitem">
+       Contacto
+      </a>
+     </li>
+    </ul>
+   </div>
+  </header>
+  <main class="container mx-auto px-6 md:px-12 pt-12 pb-20 max-w-7xl">
+   <!-- 1. Inicio / Presentación -->
+   <section aria-label="Sección de inicio y presentación" class="mb-28 relative rounded-3xl overflow-hidden shadow-2xl" id="inicio">
+    <img alt="Palco sensorial en uso, con hinchas disfrutando un partido de fútbol, ambiente adaptado con iluminación suave y personas con discapacidad acompañadas" class="w-full h-[320px] md:h-[480px] object-cover brightness-90" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ac07574c-f5ee-463c-44cb-266730d94dc1.jpg" width="1200"/>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-red-900/80 to-red-900/95 flex flex-col justify-center items-center md:items-start px-6 md:px-20 text-center md:text-left">
+     <h1 class="text-white font-extrabold text-4xl md:text-6xl leading-tight drop-shadow-lg max-w-3xl">
+      Rojo Inclusivo.
+      <br/>
+      <span class="text-yellow-300 italic">
+       Porque el fútbol también se vive desde la pertenencia.
+      </span>
+     </h1>
+     <p class="mt-6 text-lg md:text-2xl text-red-100 max-w-xl font-semibold tracking-wide drop-shadow-md">
+      Una propuesta del Club Atlético Independiente para hacer del fútbol
+          una experiencia accesible para todos.
+     </p>
+     <a class="mt-10 inline-block bg-yellow-400 text-red-900 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-yellow-300 transition focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:ring-opacity-75" href="#alianzas">
+      Sumate al cambio
+     </a>
+    </div>
+   </section>
+   <!-- 2. Quiénes somos -->
+   <section aria-label="Sección Quiénes somos" class="mb-28 max-w-6xl mx-auto" id="quienes-somos">
+    <h2 class="text-4xl font-extrabold text-red-700 mb-10 border-b-4 border-yellow-400 inline-block pb-2">
+     Quiénes somos
+    </h2>
+    <div class="flex flex-col md:flex-row items-center gap-12 md:gap-16 text-gray-800">
+     <div class="md:w-1/2 text-lg leading-relaxed">
+      <p>
+       Rojo Inclusivo es un programa impulsado desde el Club Atlético
+            Independiente que busca garantizar la participación plena y efectiva
+            de personas con discapacidad en el ámbito deportivo, especialmente
+            en la experiencia del hincha. Desde su nacimiento en 2022, el
+            proyecto promueve acciones concretas de inclusión, impulsadas desde
+            el corazón del club y sostenidas por el compromiso de su comunidad.
+      </p>
+     </div>
+     <div class="md:w-1/2 grid grid-cols-2 gap-6 rounded-xl overflow-hidden shadow-lg">
+      <img alt="Foto institucional del equipo de Rojo Inclusivo en el estadio Libertadores de América, personas sonrientes con camisetas rojas y elementos de inclusión" class="object-cover w-full h-48 md:h-60" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b0c55fd8-81bb-4175-7492-e5d100d212cf.jpg" width="400"/>
+      <img alt="Collage de actividades de Rojo Inclusivo con familias y niños participando en eventos inclusivos en el club" class="object-cover w-full h-48 md:h-60" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/359d9742-50c5-4413-ea6e-d90d01fdbd61.jpg" width="400"/>
+      <img alt="Evento de inclusión con hinchas en el club con camisetas rojas, ambiente alegre y participativo" class="object-cover w-full h-48 md:h-60" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b5dd4e23-d3df-4fb2-58de-660c6b3273c9.jpg" width="400"/>
+      <img alt="Voluntarios de Rojo Inclusivo en actividad de concientización, con carteles y sonrisas" class="object-cover w-full h-48 md:h-60" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cf528125-036f-4751-d38f-4ae17c95e4fe.jpg" width="400"/>
+     </div>
+    </div>
+   </section>
+   <!-- 3. Nuestro recorrido -->
+   <section aria-label="Sección Nuestro recorrido" class="mb-28 max-w-5xl mx-auto" id="nuestro-recorrido">
+    <h2 class="text-4xl font-extrabold text-red-700 mb-12 border-b-4 border-yellow-400 inline-block pb-2">
+     Nuestro recorrido
+    </h2>
+    <ol class="relative border-l-8 border-red-700 pl-10 space-y-14 text-gray-800">
+     <li class="relative">
+      <span class="absolute -left-12 top-0 bg-red-700 text-white font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl shadow-lg">
+       2022
+      </span>
+      <p class="text-xl font-semibold max-w-xl">
+       Primeras reuniones con familias e instituciones especializadas.
+      </p>
+      <p class="mt-2 max-w-xl text-gray-600 leading-relaxed">
+       Se establecieron los primeros vínculos con organizaciones y familias
+            para entender las necesidades y diseñar un plan inclusivo.
+      </p>
+     </li>
+     <li class="relative">
+      <span class="absolute -left-12 top-0 bg-red-700 text-white font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl shadow-lg">
+       2023
+      </span>
+      <p class="text-xl font-semibold max-w-xl">
+       Formación del equipo de inclusión dentro del club.
+      </p>
+      <p class="mt-2 max-w-xl text-gray-600 leading-relaxed">
+       Se conformó un equipo interdisciplinario para llevar adelante las
+            acciones y coordinar con las áreas del club.
+      </p>
+     </li>
+     <li class="relative">
+      <span class="absolute -left-12 top-0 bg-red-700 text-white font-bold rounded-full w-14 h-14 flex items-center justify-center text-xl shadow-lg">
+       2024
+      </span>
+      <p class="text-xl font-semibold max-w-xl">
+       Inauguración del palco sensorial y entrega de los primeros kits.
+      </p>
+      <p class="mt-2 max-w-xl text-gray-600 leading-relaxed">
+       Se habilitó el espacio adaptado en el estadio y se entregaron kits
+            sensoriales para mejorar la experiencia de los hinchas.
+      </p>
+     </li>
+    </ol>
+   </section>
+   <!-- 4. Acciones destacadas -->
+   <section aria-label="Sección Acciones destacadas" class="mb-28 max-w-7xl mx-auto" id="acciones-destacadas">
+    <h2 class="text-4xl font-extrabold text-red-700 mb-12 border-b-4 border-yellow-400 inline-block pb-2">
+     Acciones destacadas
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-gray-800 items-center">
+     <!-- Palco Sensorial -->
+     <article aria-label="Palco Sensorial" class="flex flex-col md:flex-row items-center gap-8 bg-red-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+      <img alt="Palco sensorial con iluminación regulada y ambiente adaptado para personas con hipersensibilidad sensorial en estadio de fútbol" class="rounded-2xl object-cover w-full md:w-96 h-64 md:h-72 shadow-md" height="350" loading="lazy" src="https://storage.googleapis.com/a1aa/image/11fe7999-ffe5-4fbb-d33a-d0eccae1330e.jpg" width="500"/>
+      <div>
+       <h3 class="text-3xl font-bold text-red-700 mb-4">
+        Palco Sensorial
+       </h3>
+       <p class="text-lg leading-relaxed">
+        Espacio dentro del estadio diseñado para personas con
+              hipersensibilidad sensorial. Incluye ambientación específica,
+              iluminación regulada y un entorno adaptado para disfrutar del
+              partido con tranquilidad y acompañamiento.
+       </p>
+      </div>
+     </article>
+     <!-- Kits Sensoriales -->
+     <article aria-label="Kits Sensoriales" class="flex flex-col md:flex-row items-center gap-8 bg-red-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition">
+      <img alt="Mochila con kits sensoriales que incluyen auriculares antirruido, pictogramas, objetos de autorregulación y antifaces para personas con discapacidad" class="rounded-2xl object-cover w-full md:w-96 h-64 md:h-72 shadow-md" height="350" loading="lazy" src="https://storage.googleapis.com/a1aa/image/78a77c8f-d247-4bf2-9054-b6f7d47be8fa.jpg" width="500"/>
+      <div>
+       <h3 class="text-3xl font-bold text-red-700 mb-4">
+        Kits Sensoriales
+       </h3>
+       <p class="text-lg leading-relaxed">
+        Mochilas entregadas gratuitamente, con elementos pensados para
+              regular estímulos y acompañar la experiencia en la cancha:
+              auriculares antirruido, pictogramas, objetos de autorregulación,
+              antifaces, entre otros.
+       </p>
+      </div>
+     </article>
+    </div>
+    <blockquote class="mt-16 max-w-4xl mx-auto text-center italic text-gray-600 text-xl font-semibold border-l-8 border-yellow-400 pl-8">
+     “Gracias a Rojo Inclusivo, mi hijo pudo vivir su primer partido. Por
+        fin, no se quedó afuera.”
+    </blockquote>
+   </section>
+   <!-- 5. Alianzas y acompañamiento -->
+   <section aria-label="Sección Alianzas y acompañamiento" class="mb-28 bg-red-700 rounded-3xl p-12 max-w-5xl mx-auto text-center shadow-2xl" id="alianzas">
+    <h2 class="text-4xl font-extrabold text-yellow-400 mb-8">
+     Alianzas y acompañamiento
+    </h2>
+    <p class="text-yellow-100 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+     Este proyecto crece gracias al trabajo colaborativo con profesionales,
+        instituciones y actores comprometidos con la accesibilidad.
+     <br/>
+     Si compartís nuestra visión y creés que desde tu espacio podés
+        acompañar este proceso, te invitamos a conocer más sobre cómo sumarte.
+    </p>
+    <a class="inline-block bg-yellow-400 text-red-900 font-extrabold px-12 py-4 rounded-full shadow-lg hover:bg-yellow-300 transition focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:ring-opacity-75" href="mailto:rojoinclusivo@clubaindependiente.com.ar?subject=Solicitud%20de%20informaci%C3%B3n%20institucional%20Rojo%20Inclusivo">
+     Solicitar más información institucional
+    </a>
+   </section>
+   <!-- 6. Contacto -->
+   <section aria-label="Sección Contacto" class="mb-20 max-w-4xl mx-auto" id="contacto">
+    <h2 class="text-4xl font-extrabold text-red-700 mb-10 border-b-4 border-yellow-400 inline-block pb-2">
+     Contacto
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-800 text-lg leading-relaxed">
+     <div>
+      <h3 class="font-semibold mb-3 text-red-700 text-2xl">
+       Dirección física
+      </h3>
+      <address class="not-italic max-w-md">
+       Estadio Libertadores de América – Ricardo Enrique Bochini
+       <br/>
+       Alsina 1055, Avellaneda, Buenos Aires, Argentina
+      </address>
+     </div>
+     <div>
+      <h3 class="font-semibold mb-3 text-red-700 text-2xl">
+       Correo electrónico institucional
+      </h3>
+      <a class="text-red-700 hover:underline break-words text-lg" href="mailto:rojoinclusivo@clubaindependiente.com.ar">
+       rojoinclusivo@clubaindependiente.com.ar
+      </a>
+     </div>
+     <div>
+      <h3 class="font-semibold mb-3 text-red-700 text-2xl">
+       Teléfono de contacto
+      </h3>
+      <p class="text-lg">
+       +54 11 4201-4730 (interno Inclusión Social)
+      </p>
+     </div>
+     <div>
+      <h3 class="font-semibold mb-3 text-red-700 text-2xl">
+       Redes sociales
+      </h3>
+      <ul class="space-y-4">
+       <li>
+        <a class="flex items-center space-x-4 text-red-700 hover:text-red-900 transition" href="https://www.instagram.com/rojoinclusivo" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-instagram fa-2x">
+         </i>
+         <span class="text-lg font-semibold">
+          @rojoinclusivo
+         </span>
+        </a>
+       </li>
+       <li>
+        <a class="flex items-center space-x-4 text-red-700 hover:text-red-900 transition" href="https://twitter.com/RojoInclusivo" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-twitter fa-2x">
+         </i>
+         <span class="text-lg font-semibold">
+          @RojoInclusivo
+         </span>
+        </a>
+       </li>
+       <li>
+        <a class="flex items-center space-x-4 text-red-700 hover:text-red-900 transition" href="https://www.facebook.com/RojoInclusivoCAI" rel="noopener noreferrer" target="_blank">
+         <i class="fab fa-facebook fa-2x">
+         </i>
+         <span class="text-lg font-semibold">
+          /RojoInclusivoCAI
+         </span>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- 7. Pie de página -->
+  <footer aria-label="Pie de página" class="bg-red-900 text-yellow-300 py-12 shadow-inner border-t-4 border-yellow-400">
+   <div class="container mx-auto px-6 md:px-12 max-w-7xl flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+    <div class="flex items-center space-x-10">
+     <img alt="Logo oficial del Club Atlético Independiente, escudo rojo con letras blancas" class="w-20 h-20 object-contain drop-shadow-lg" height="80" loading="lazy" src="TU_URL_DE_IMAGEN_AQUI" width="80"/>
+     <img alt="Logo oficial de Rojo Inclusivo, símbolo institucional con colores rojo y blanco" class="w-20 h-20 object-contain drop-shadow-lg" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/46759a2e-f504-4726-ecc9-23cc557ae3ee.jpg" width="80"/>
+    </div>
+    <div class="text-center md:text-right max-w-md text-sm leading-relaxed font-semibold tracking-wide">
+     <p>
+      © 2025 Club Atlético Independiente – Programa Rojo Inclusivo
+     </p>
+     <p>
+      Todos los derechos reservados.
+     </p>
+     <p class="italic mt-1 text-yellow-400">
+      Inclusión es pertenencia.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      const expanded =
+        menuBtn.getAttribute("aria-expanded") === "true" ? "false" : "true";
+      menuBtn.setAttribute("aria-expanded", expanded);
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    document.querySelectorAll("#mobile-menu a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  </script>
+ </body>
+</html>
